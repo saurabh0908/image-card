@@ -1,13 +1,15 @@
 
-let root = document.getElementById('root');
-let grid = document.querySelector('.grid');
-let spinner = new Spinner().spin(grid);
+var root = document.getElementById('root');
+var grid = document.querySelector('.grid');
+var spinner = new Spinner().spin(grid);
 // root.style.visibility = 'hidden';
 root.style.display = 'none';
-let msnry = new Masonry(grid, {
+var msnry = new Masonry(grid, {
   // options
   itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer'
+  columnWidth: '.grid-sizer',
+  percentPosition: true,
+  gutter: 1
 });
 
 
